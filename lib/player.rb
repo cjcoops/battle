@@ -11,9 +11,4 @@ class Player
     @points -= 10
   end
 
-  def attack(other_player)
-    other_player.receive_damage
-  end
-
-
 end

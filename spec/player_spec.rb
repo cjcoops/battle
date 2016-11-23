@@ -18,16 +18,15 @@ describe Player do
 
   describe '#receive_damage' do
     it "reduces the points after attack" do
-
       expect{chris.receive_damage}.to change{chris.points}.by(-10)
     end
   end
 
-  describe "#attack" do
-    it 'damages the player' do
-      expect(chris).to receive(:receive_damage)
-      agata.attack(chris)
-    end
-
-  end
+  # describe "#attack" do
+  #   it 'damages the player' do
+  #     expect(chris).to receive(:receive_damage)
+  #     agata.attack(chris)
+  # #   end
+  #
+  # end
 end
